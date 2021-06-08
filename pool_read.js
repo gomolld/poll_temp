@@ -86,9 +86,6 @@ connection.on('error', function(err) {
 
 data.device0.obs.forEach(function (item) {
 
-    // var d = new Date(item.timestamp);
-    // 
-    // item.timestamp = d.format('YYYY-MM-DD HH:mm:ss');
 
     item.timestamp=moment(Date.parse(item.timestamp)).format('YYYY-MM-DD HH:mm:ss');
 
